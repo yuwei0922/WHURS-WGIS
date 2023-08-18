@@ -1,0 +1,94 @@
+.map-background {
+    height: 100%;
+}
+
+.mapcontent {
+    height: 90%;
+}
+
+.select-contronller {
+    position: absolute;
+    height: 500px;
+    top: 50%;
+    right: 23px;
+    transform: translateY(-50%);
+    background-color: rgba(45, 48, 43, 0.3);
+    text-align: center;
+    width: 250px;
+    opacity: 1;
+    transition: .5s;
+
+}
+
+.input-right {
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    height: 45px;
+}
+
+
+
+.radiosel {
+    margin-top: 30px;
+}
+
+.inouttype {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.changedis {
+    position: absolute;
+    height: 40px;
+    font-size: 25px;
+    width: 100%;
+    bottom: 0;
+    margin: 0 auto;
+    color: black;
+    background-color: rgba(45, 48, 43, 0.4);
+    border-radius: 10px;
+}
+
+#selectcountry {
+    width: 340px;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5%;
+    display: block;
+}
+
+.mode-switch{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: .0625rem;
+}
+
+.mode-switch-cilcle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:white;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+
+.mode-switch-toggle{
+    background-color: purple;
+    height: 30px;
+    width: 70px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+.mode-switch-toggle:hover .mode-switch-cilcle{
+    transform: translateX(35px);
+}

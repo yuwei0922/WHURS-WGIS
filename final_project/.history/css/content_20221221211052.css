@@ -1,0 +1,39 @@
+.map-background{
+    height:100%;
+}
+
+.mapcontent{
+    height: 90%;
+}
+
+.select-contronller{
+    position: absolute;
+    height: 400px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color:rgba(0,0,0,0.3) ;
+    text-align: center;
+    width: 200px;
+}
+
+.input-right{
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+    border-radius:10px;
+    height: 45px;
+}
+
+
+
+.radiosel{
+    margin-top: 30px;
+}
+
+.changedis{
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    left: 45%;
+}

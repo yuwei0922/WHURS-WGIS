@@ -1,0 +1,20 @@
+.map-background{
+    height:100%;
+}
+
+.mapcontent{
+    height: 90%;
+}
+
+.select-contronller{
+    position: absolute;
+    height: 700px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+}
+
+.input-ori{
+
+}

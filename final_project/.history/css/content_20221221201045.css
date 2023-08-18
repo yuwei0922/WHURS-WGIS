@@ -1,0 +1,16 @@
+.map-background{
+    height:100%;
+    position: relative;
+}
+
+.mapcontent{
+    height: 90%;
+}
+
+.select-contronller{
+    display: inline-block;
+    position: absolute;
+    height: 400px;
+    background-color: black;
+    width: 30%;
+}

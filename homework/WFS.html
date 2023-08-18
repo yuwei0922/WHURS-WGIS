@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html><head>
+<title>世界地震分布图</title>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/ol3/3.6.0/ol.css " 
+type="text/css">
+<script 
+src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classL
+ist,URL"></script>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/ol3/3.6.0/ol.js "></script>
+<style type="text/css">
+        .top{
+    /* 设置宽度高度背景颜色 */
+    height: auto; /*高度改为自动高度*/
+    width:100%;
+    margin-left: 0;
+   
+    background:rgb(38, 26, 107);
+    position: relative; /*固定在顶部*/
+    top: 0cm;/*离顶部的距离为0*/
+    margin-bottom: 3px;
+}
+.top ul{
+    /* 清除ul标签的默认样式 */
+    width: auto;/*宽度也改为自动*/
+    list-style-type: none;
+    white-space:nowrap;
+    overflow: hidden;
+    margin-left: 5%;
+    /* margin-top: 0;          */
+    padding: 0;
+
+}
+.top li {
+    float:left; /* 使li内容横向浮动，即横向排列  */
+    margin-right:2%;  /* 两个li之间的距离*/
+    position: relative;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+.top li a{
+   /* 设置链接内容显示的格式*/
+    display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+    color:white;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    text-decoration: none; /* 去除下划线 */
+    
+}
+.top li a:hover{
+    /* 鼠标选中时背景变为深色 */
+    background-color: #1D1450;
+}
+
+body{
+    background:#D4EAFC;
+}
+
+#CtrlBtnGrp button {
+    background-color: #5F81D1;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#CtrlBtnGrp button:hover{
+    /* 鼠标选中时背景变为深色 */
+    background-color: #47619D;
+}
+
+    </style>
+    <body>
+            <div class="top">
+                   <center> 
+                    <ul>
+                    <li><a href="./WMS.html">WMS</a></li>
+                    <li><a href="./WFS.html">WFS</a></li>
+                    </ul>
+                    </center>      
+            </div>
+        </body>
+        
+</head>
+<body> 
+<div id="map" class="map"></div>
+<header class="l-center" id='HeadOfPage'>
+        <h3 class="showcase-title">世界地震分布图（2016-07-01——2016-07-15）</h3>
+        <h4 class="showcase-sub-title">2020302131119 殷雨薇</h4>
+    </header>
+
+<div class="button-group" id='CtrlBtnGrp' style="width:100%">
+        <h4>交互操作：</h4>
+            <button onClick="moveToLeft();">向左平移</button>
+            <button onClick="moveToRight();">向右平移</button>
+            <button onClick="moveToUp();">向上平移</button>
+            <button onClick="moveToDown();">向下平移</button>
+            <button onClick="zoomIn();">放大</button>
+            <button onClick="zoomOut();">缩小</button>
+    </div>
+
+<script>
+    var divHead=document.getElementById('HeadOfPage');
+    divHead.style.cssText+='text-align:center';
+
+	var raster = new ol.layer.Tile({
+ source: new ol.source.BingMaps({
+ imagerySet: 'Aerial',
+ key:'AnodOYdNpyr8LXnJcpIOrFlsFV5LQ25Z2gg-UOTWrn9TCdA5yvx8J2Qq1NOyVrfL'
+ })
+});
+	var vector = new ol.layer.Vector({
+ source: new ol.source.Vector({
+ format: new ol.format.GeoJSON({ignoreExtraDims: true}),
+ url: 'https://earthquake.usgs.gov/fdsnws/event/1/query?starttime=2016-07-01&endtime=2016-07-15&format=geojson',
+ strategy: ol.loadingstrategy.all
+ })
+ });
+	 var view = new ol.View({
+ center: ol.proj.fromLonLat([-100, 37]),
+ zoom: 4,
+ maxZoom: 10,
+ minZoom: 2
+ });
+ var map = new ol.Map({
+            controls: ol.control.defaults().extend([    // 往地图增加控件
+            new ol.control.FullScreen(),
+            new ol.control.OverviewMap(),
+            new ol.control.ZoomSlider(),
+            new ol.control.ZoomToExtent()
+        ]),
+ layers: [raster, vector],
+ target: document.getElementById('map'),
+ view: view
+ });
+ 
+    //==============功能及按钮==============//
+        // 向左移动地图
+        function moveToLeft() {
+            var view = map.getView();
+            var mapCenter = view.getCenter();
+
+            var pan=ol.animation.pan({
+                duration:200,
+                source:mapCenter
+            });
+
+            // 让地图中心的x值减小，即可使得地图向左移动
+            mapCenter[0] -= 300000;
+            view.setCenter(mapCenter);
+            map.beforeRender(pan);
+            map.render();
+        }
+
+        // 向右移动地图
+        function moveToRight() {
+            var view = map.getView();
+            var mapCenter = view.getCenter();
+            
+            var pan=ol.animation.pan({
+                duration:200,
+                source:mapCenter
+            });
+
+            // 让地图中心的x值增大，即可使得地图向右移动
+            mapCenter[0] += 300000;
+            view.setCenter(mapCenter);
+            map.beforeRender(pan);
+            map.render();
+        }
+
+        // 向上移动地图
+        function moveToUp() {
+            var view = map.getView();
+            var mapCenter = view.getCenter();
+
+            var pan=ol.animation.pan({
+                duration:200,
+                source:mapCenter
+            });
+
+            // 让地图中心的y值增大，即可使得地图向上移动
+            mapCenter[1] += 300000;
+            view.setCenter(mapCenter);
+            map.beforeRender(pan);
+            map.render();
+        }
+
+        // 向下移动地图
+        function moveToDown() {
+            var view = map.getView();
+            var mapCenter = view.getCenter();
+            
+            var pan=ol.animation.pan({
+                duration:200,
+                source:mapCenter
+            });
+
+            // 让地图中心的y值减小，即可使得地图向下移动
+            mapCenter[1] -= 300000;
+            view.setCenter(mapCenter);
+            map.beforeRender(pan);
+            map.render();
+        }
+        
+        // 放大地图
+        function zoomIn() {
+            var view = map.getView();
+
+            var zoom=ol.animation.zoom({
+                duration:250,
+                resolution:view.getResolution()
+            });
+            // 让地图的zoom增加1，从而实现地图放大
+            map.beforeRender(zoom);
+            view.setZoom(view.getZoom() + 1);
+        }
+
+        // 缩小地图
+        function zoomOut() {
+            var view = map.getView();
+            
+            var zoom=ol.animation.zoom({
+                duration:250,
+                resolution:view.getResolution()
+            });
+            // 让地图的zoom减小1，从而实现地图缩小
+            map.beforeRender(zoom);
+            view.setZoom(view.getZoom() - 1);
+        }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(240, 240, 240);
+    }
+
+    a {
+        font-family:STFangsong;
+        text-decoration: none;
+        color: rgb(10, 55, 151)
+    }
+
+    h2{
+        padding-left: 40px;
+    }
+
+    .right {
+        position: absolute;
+        /*右栏定位过去*/
+        top: 80px;
+        right: 0px;
+        width: 500px;
+        height: 100px;
+        /*opacity:0.5; /*半透明*/
+    }
+
+    .mid {
+        position: absolute;
+        /*定位到右栏左边正好相邻的地方*/
+        top: 80px;
+        right: 480px;
+        width: 500px;
+        height: 100px;
+    }
+
+    .left {
+        position: absolute;
+        /*右栏定位过去*/
+        top: 80px;
+        right: 1100px;
+        height: 100px;
+        /*不设置宽，默认占整行*/
+        /* margin-right: 1000px; */
+        /*设置右边框，使其刚好让出中栏和右栏的位置*/
+    }
+
+    ul.pagination {
+
+        display: inline-block;
+
+        padding: 0;
+
+        margin: 0;
+
+    }
+
+    ul.pagination li {
+        display: inline;
+    }
+
+    ul.pagination li a {
+
+        color: black;
+
+        float: left;
+
+        padding: 8px 16px;
+
+        text-decoration: none;
+
+    }
+
+    ul.pagination li a.active {
+
+        background-color: #4CAF50;
+
+        color: white;
+
+    }
+
+    ul.pagination li a:hover:not(.active) {
+        background-color: #ddd;
+    }
+</style>
+
+<body>
+    <div>
+        <h2><img src="policy\R-C.png"> 移民资讯</h2>
+    </div>
+    <hr>
+    <div class="left">
+        <div> <a href="policy\移民\8月起，这些新规实施将影响华侨华人生活.txt" download="8月起，这些新规实施将影响华侨华人生活.txt">8月起，这些新规实施将影响华侨华人生活</a>
+        </div>
+        <div> <a href="policy\移民\9月最新出入境政策和国际航班计划出炉.txt" download="9月最新出入境政策和国际航班计划出炉.txt">9月最新出入境政策和国际航班计划出炉</a></div>
+        <div> <a href="policy\移民\11月起 这些新规和动态将影响华侨华人的生活.txt" download="11月起 这些新规和动态将影响华侨华人的生活.txt">11月起
+                这些新规和动态将影响华侨华人的生活</a></div>
+        <div> <a href="policy\移民\11月新规｜出入境政策有新动作，请侨胞速览！.txt"
+                download="11月新规｜出入境政策有新动作，请侨胞速览！.txt">11月新规｜出入境政策有新动作，请侨胞速览！</a></div>
+        <div> <a href="policy\移民\12月16日起入境阿根廷需强制提交新冠检测阴性报告.txt"
+                download="12月16日起入境阿根廷需强制提交新冠检测阴性报告.txt">12月16日起入境阿根廷需强制提交新冠检测阴性报告</a></div>
+        <div> <a href="policy\移民\35岁菜品陈皮鸡曾带火美式中餐 华人看法五味杂陈.txt" download="35岁菜品陈皮鸡曾带火美式中餐 华人看法五味杂陈.txt">35岁菜品陈皮鸡曾带火美式中餐
+                华人看法五味杂陈</a></div>
+        <div> <a href="policy\移民\70载笔耕“中国故事” 海外华媒与新中国唇齿相依.txt" download="70载笔耕“中国故事” 海外华媒与新中国唇齿相依.txt">70载笔耕“中国故事”
+                海外华媒与新中国唇齿相依</a></div>
+        <div> <a href="policy\移民\2020年新西兰出入境移民人数创20年来最低纪录.txt"
+                download="2020年新西兰出入境移民人数创20年来最低纪录.txt">2020年新西兰出入境移民人数创20年来最低纪录</a></div>
+        <div> <a href="policy\移民\2021年加拿大担保配偶移民：中国申请者人数排第四.txt"
+                download="2021年加拿大担保配偶移民：中国申请者人数排第四.txt">2021年加拿大担保配偶移民：中国申请者人数排第四</a></div>
+        <div> <a href="policy\移民\2022年3月美国绿卡排期：职业、亲属移民几乎均停滞.txt"
+                download="2022年3月美国绿卡排期：职业、亲属移民几乎均停滞.txt">2022年3月美国绿卡排期：职业、亲属移民几乎均停滞</a></div>
+        <div> <a href="policy\移民\阿根廷5家华人超市申请落户布省港口城市.txt" download="阿根廷5家华人超市申请落户布省港口城市.txt">阿根廷5家华人超市申请落户布省港口城市</a>
+        </div>
+        <div> <a href="policy\移民\阿根廷布省允许常住外国人预约接种新冠肺炎疫苗.txt"
+                download="阿根廷布省允许常住外国人预约接种新冠肺炎疫苗.txt">阿根廷布省允许常住外国人预约接种新冠肺炎疫苗</a></div>
+        <div> <a href="policy\移民\阿根廷更新防疫措施：取消出入境健康电子宣誓单.txt"
+                download="阿根廷更新防疫措施：取消出入境健康电子宣誓单.txt">阿根廷更新防疫措施：取消出入境健康电子宣誓单</a></div>
+        <div> <a href="policy\移民\阿根廷国家移民局局长解读出入境须注意的事项.txt"
+                download="阿根廷国家移民局局长解读出入境须注意的事项.txt">阿根廷国家移民局局长解读出入境须注意的事项</a></div>
+        <div> <a href="policy\移民\阿根廷华人善行义举情暖“第二故乡”.txt" download="阿根廷华人善行义举情暖“第二故乡”.txt">阿根廷华人善行义举情暖“第二故乡”</a></div>
+        <div> <a href="policy\移民\阿根廷华人网：阿根廷政府公布入境新要求.txt" download="阿根廷华人网：阿根廷政府公布入境新要求.txt">阿根廷华人网：阿根廷政府公布入境新要求</a>
+        </div>
+        <div> <a href="policy\移民\阿根廷华人足球协会会长陈洁：足球搭建民心相通之桥.txt"
+                download="阿根廷华人足球协会会长陈洁：足球搭建民心相通之桥.txt">阿根廷华人足球协会会长陈洁：足球搭建民心相通之桥</a></div>
+        <div> <a href="policy\移民\阿根廷计划重启旅游业：允许已接种疫苗外国游客入境.txt"
+                download="阿根廷计划重启旅游业：允许已接种疫苗外国游客入境.txt">阿根廷计划重启旅游业：允许已接种疫苗外国游客入境</a></div>
+        <div> <a href="policy\移民\阿根廷媒体：重压之下华人超市出现第二波关店潮.txt"
+                download="阿根廷媒体：重压之下华人超市出现第二波关店潮.txt">阿根廷媒体：重压之下华人超市出现第二波关店潮</a></div>
+        <div> <a href="policy\移民\阿根廷侨界联手为贫困地区捐赠物资献爱心.txt" download="阿根廷侨界联手为贫困地区捐赠物资献爱心.txt">阿根廷侨界联手为贫困地区捐赠物资献爱心</a>
+        </div>
+        <div> <a href="policy\移民\阿根廷取消出入境盖章 旅客可在线申请印戳证明.txt" download="阿根廷取消出入境盖章 旅客可在线申请印戳证明.txt">阿根廷取消出入境盖章
+                旅客可在线申请印戳证明</a></div>
+        <div> <a href="policy\移民\阿根廷移民局公布埃塞萨机场抗原检测取消条件.txt"
+                download="阿根廷移民局公布埃塞萨机场抗原检测取消条件.txt">阿根廷移民局公布埃塞萨机场抗原检测取消条件</a></div>
+        <div> <a href="policy\移民\阿根廷移民局简化出境手续 民众不必填写宣誓单.txt" download="阿根廷移民局简化出境手续 民众不必填写宣誓单.txt">阿根廷移民局简化出境手续
+                民众不必填写宣誓单</a></div>
+        <div> <a href="policy\移民\阿根廷移民局取消出入境护照盖章 改为数字化登记.txt" download="阿根廷移民局取消出入境护照盖章 改为数字化登记.txt">阿根廷移民局取消出入境护照盖章
+                改为数字化登记</a></div>
+        <div> <a href="policy\移民\阿根廷移民局在边境和机场开通儿童出境授权.txt" download="阿根廷移民局在边境和机场开通儿童出境授权.txt">阿根廷移民局在边境和机场开通儿童出境授权</a>
+        </div>
+    </div>
+
+    <div class="mid">
+        <div> <a href="policy\移民\阿根廷政府推出外语培训计划 中文被列入其中.txt" download="阿根廷政府推出外语培训计划 中文被列入其中.txt">阿根廷政府推出外语培训计划
+                中文被列入其中</a></div>
+        <div> <a href="policy\移民\阿根廷政府宣布开放边境 具体入境要求有这些.txt" download="阿根廷政府宣布开放边境 具体入境要求有这些.txt">阿根廷政府宣布开放边境
+                具体入境要求有这些</a></div>
+        <div> <a href="policy\移民\阿塞拜疆将视情延长外国公民停留期 中使馆发提醒.txt" download="阿塞拜疆将视情延长外国公民停留期 中使馆发提醒.txt">阿塞拜疆将视情延长外国公民停留期
+                中使馆发提醒</a></div>
+        <div> <a href="policy\移民\安哥拉移民总局将提高签证发放速度.txt" download="安哥拉移民总局将提高签证发放速度.txt">安哥拉移民总局将提高签证发放速度</a></div>
+        <div> <a href="policy\移民\澳大利亚71.5万移民找不到对口工作 中国移民受影响.txt"
+                download="澳大利亚71.5万移民找不到对口工作 中国移民受影响.txt">澳大利亚71.5万移民找不到对口工作 中国移民受影响</a></div>
+        <div> <a href="policy\移民\澳大利亚出台毕业生工签新规 留学生受益.txt" download="澳大利亚出台毕业生工签新规 留学生受益.txt">澳大利亚出台毕业生工签新规 留学生受益</a>
+        </div>
+        <div> <a href="policy\移民\澳大利亚多地计划降低海外赴澳务工移民申请标准.txt"
+                download="澳大利亚多地计划降低海外赴澳务工移民申请标准.txt">澳大利亚多地计划降低海外赴澳务工移民申请标准</a></div>
+        <div> <a href="policy\移民\澳大利亚公布签证新调整 移民父母可留澳办理签证.txt" download="澳大利亚公布签证新调整 移民父母可留澳办理签证.txt">澳大利亚公布签证新调整
+                移民父母可留澳办理签证</a></div>
+        <div> <a href="policy\移民\澳大利亚国际旅客入境卡2021年将改为电子填写.txt"
+                download="澳大利亚国际旅客入境卡2021年将改为电子填写.txt">澳大利亚国际旅客入境卡2021年将改为电子填写</a></div>
+        <div> <a href="policy\移民\澳大利亚海外出生移民和第二代移民比例稳步增长.txt"
+                download="澳大利亚海外出生移民和第二代移民比例稳步增长.txt">澳大利亚海外出生移民和第二代移民比例稳步增长</a></div>
+        <div> <a href="policy\移民\澳大利亚或将要求伴侣签证申请者需展现英语能力.txt"
+                download="澳大利亚或将要求伴侣签证申请者需展现英语能力.txt">澳大利亚或将要求伴侣签证申请者需展现英语能力</a></div>
+        <div> <a href="policy\移民\澳大利亚将临时调整 伴侣签证申请人可直接在澳走流程.txt" download="澳大利亚将临时调整 伴侣签证申请人可直接在澳走流程.txt">澳大利亚将临时调整
+                伴侣签证申请人可直接在澳走流程</a></div>
+        <div> <a href="policy\移民\澳大利亚决定提高每周赴澳旅客人数接收上限.txt" download="澳大利亚决定提高每周赴澳旅客人数接收上限.txt">澳大利亚决定提高每周赴澳旅客人数接收上限</a>
+        </div>
+        <div> <a href="policy\移民\澳大利亚塔州向2.6万名临时签证持有者提供补贴.txt"
+                download="澳大利亚塔州向2.6万名临时签证持有者提供补贴.txt">澳大利亚塔州向2.6万名临时签证持有者提供补贴</a></div>
+        <div> <a href="policy\移民\澳大利亚通过新法案 帮移民获得更多免费英语课程.txt" download="澳大利亚通过新法案 帮移民获得更多免费英语课程.txt">澳大利亚通过新法案
+                帮移民获得更多免费英语课程</a></div>
+        <div> <a href="policy\移民\澳大利亚投资移民门槛提高？政府鼓励投资偏远地区.txt"
+                download="澳大利亚投资移民门槛提高？政府鼓励投资偏远地区.txt">澳大利亚投资移民门槛提高？政府鼓励投资偏远地区</a></div>
+        <div> <a href="policy\移民\澳大利亚新州推190签证新规 影响多个热门职业.txt" download="澳大利亚新州推190签证新规 影响多个热门职业.txt">澳大利亚新州推190签证新规
+                影响多个热门职业</a></div>
+        <div> <a href="policy\移民\澳大利亚政府宣布提升“杰出人才”入籍申请灵活度.txt"
+                download="澳大利亚政府宣布提升“杰出人才”入籍申请灵活度.txt">澳大利亚政府宣布提升“杰出人才”入籍申请灵活度</a></div>
+        <div> <a href="policy\移民\澳大利亚政府宣布移民配额上限将提高至19.5万人.txt"
+                download="澳大利亚政府宣布移民配额上限将提高至19.5万人.txt">澳大利亚政府宣布移民配额上限将提高至19.5万人</a></div>
+        <div> <a href="policy\移民\澳国际旅行禁令再延约3个月 临时签证持有者受影响.txt" download="澳国际旅行禁令再延约3个月 临时签证持有者受影响.txt">澳国际旅行禁令再延约3个月
+                临时签证持有者受影响</a></div>
+        <div> <a href="policy\移民\澳临时毕业生签证申请创纪录 中国学生数排名第二.txt" download="澳临时毕业生签证申请创纪录 中国学生数排名第二.txt">澳临时毕业生签证申请创纪录
+                中国学生数排名第二</a></div>
+        <div> <a href="policy\移民\澳留学生签证最新变化出台 5大改变确保留学优势.txt" download="澳留学生签证最新变化出台 5大改变确保留学优势.txt">澳留学生签证最新变化出台
+                5大改变确保留学优势</a></div>
+        <div> <a href="policy\移民\巴拉圭：11月2日起恢复境内逾期停留罚款制度.txt"
+                download="巴拉圭：11月2日起恢复境内逾期停留罚款制度.txt">巴拉圭：11月2日起恢复境内逾期停留罚款制度</a></div>
+        <div> <a href="policy\移民\巴拿马城唐人街：全球移民复杂历史的缩影.txt" download="巴拿马城唐人街：全球移民复杂历史的缩影.txt">巴拿马城唐人街：全球移民复杂历史的缩影</a>
+        </div>
+        <div> <a href="policy\移民\巴拿马地铁新规：拒绝佩戴或不正确佩戴口罩者将罚款.txt"
+                download="巴拿马地铁新规：拒绝佩戴或不正确佩戴口罩者将罚款.txt">巴拿马地铁新规：拒绝佩戴或不正确佩戴口罩者将罚款</a></div>
+
+    </div>
+
+    <div class="right">
+        <div> <a href="policy\移民\巴西联邦政府再次调整入境政策 中使馆发提醒.txt" download="巴西联邦政府再次调整入境政策 中使馆发提醒.txt">巴西联邦政府再次调整入境政策
+                中使馆发提醒</a></div>
+        <div> <a href="policy\移民\巴西联邦政府再调整外国公民入境限制政策.txt" download="巴西联邦政府再调整外国公民入境限制政策.txt">巴西联邦政府再调整外国公民入境限制政策</a>
+        </div>
+        <div> <a href="policy\移民\巴西延长外国公民身份材料有效期至2022年9月15日.txt"
+                download="巴西延长外国公民身份材料有效期至2022年9月15日.txt">巴西延长外国公民身份材料有效期至2022年9月15日</a></div>
+        <div> <a href="policy\移民\巴西延长外国公民通过陆路、海路口岸入境巴西限制.txt"
+                download="巴西延长外国公民通过陆路、海路口岸入境巴西限制.txt">巴西延长外国公民通过陆路、海路口岸入境巴西限制</a></div>
+        <div> <a href="policy\移民\拜登签署3项行政令 扭转特朗普强硬移民政策.txt" download="拜登签署3项行政令 扭转特朗普强硬移民政策.txt">拜登签署3项行政令
+                扭转特朗普强硬移民政策</a></div>
+        <div> <a href="policy\移民\拜登再废特朗普时期移民规定 取消签证申请医保要求.txt" download="拜登再废特朗普时期移民规定 取消签证申请医保要求.txt">拜登再废特朗普时期移民规定
+                取消签证申请医保要求</a></div>
+        <div> <a href="policy\移民\拜登政府正式撤回H-1B签证薪资优先抽签政策.txt"
+                download="拜登政府正式撤回H-1B签证薪资优先抽签政策.txt">拜登政府正式撤回H-1B签证薪资优先抽签政策</a></div>
+        <div> <a href="policy\移民\保护签证持有人免受剥削 美国公布H-1B工作签新规.txt" download="保护签证持有人免受剥削 美国公布H-1B工作签新规.txt">保护签证持有人免受剥削
+                美国公布H-1B工作签新规</a></div>
+        <div> <a href="policy\移民\比利时面临大量难民申请 移民局暂时关闭窗口.txt" download="比利时面临大量难民申请 移民局暂时关闭窗口.txt">比利时面临大量难民申请
+                移民局暂时关闭窗口</a></div>
+        <div> <a href="policy\移民\冰岛实施新的入境防疫政策 入境人员必须隔离观察.txt" download="冰岛实施新的入境防疫政策 入境人员必须隔离观察.txt">冰岛实施新的入境防疫政策
+                入境人员必须隔离观察</a></div>
+        <div> <a href="policy\移民\冰岛政府发布应对新冠肺炎疫情最新入境防控措施.txt"
+                download="冰岛政府发布应对新冠肺炎疫情最新入境防控措施.txt">冰岛政府发布应对新冠肺炎疫情最新入境防控措施</a></div>
+        <div> <a href="policy\移民\波士顿华埠社区召开会议 探讨华埠历史文化保护.txt" download="波士顿华埠社区召开会议 探讨华埠历史文化保护.txt">波士顿华埠社区召开会议
+                探讨华埠历史文化保护</a></div>
+        <div> <a href="policy\移民\玻利维亚移民局发布外国人签证、居留证延期规定.txt"
+                download="玻利维亚移民局发布外国人签证、居留证延期规定.txt">玻利维亚移民局发布外国人签证、居留证延期规定</a></div>
+        <div> <a href="policy\移民\玻利维亚政府就中国公民申请延长境外停留时间回复.txt"
+                download="玻利维亚政府就中国公民申请延长境外停留时间回复.txt">玻利维亚政府就中国公民申请延长境外停留时间回复</a></div>
+        <div> <a href="policy\移民\不见面，也能办，线上服务操作指南来了！.txt" download="不见面，也能办，线上服务操作指南来了！.txt">不见面，也能办，线上服务操作指南来了！</a>
+        </div>
+        <div> <a href="policy\移民\不具备转机赴华条件 中使馆吁旅客勿选择经尼泊尔转机.txt" download="不具备转机赴华条件 中使馆吁旅客勿选择经尼泊尔转机.txt">不具备转机赴华条件
+                中使馆吁旅客勿选择经尼泊尔转机</a></div>
+        <div> <a href="policy\移民\曾因疫情暂停 加拿大移民部对快速通道项目恢复抽签.txt" download="曾因疫情暂停 加拿大移民部对快速通道项目恢复抽签.txt">曾因疫情暂停
+                加拿大移民部对快速通道项目恢复抽签</a></div>
+        <div> <a href="policy\移民\潮州申办第二十二届国际潮团联谊年会.txt" download="潮州申办第二十二届国际潮团联谊年会.txt">潮州申办第二十二届国际潮团联谊年会</a></div>
+        <div> <a href="policy\移民\持短期签证入境泰国者9月26日前须离境.txt" download="持短期签证入境泰国者9月26日前须离境.txt">持短期签证入境泰国者9月26日前须离境</a>
+        </div>
+        <div> <a href="policy\移民\持绿卡美国永久居民需留意 “公共负担”政策将生效.txt" download="持绿卡美国永久居民需留意 “公共负担”政策将生效.txt">持绿卡美国永久居民需留意
+                “公共负担”政策将生效</a></div>
+        <div> <a href="policy\移民\持落地签入境埃及，已停留近30天，能否续签？.txt"
+                download="持落地签入境埃及，已停留近30天，能否续签？.txt">持落地签入境埃及，已停留近30天，能否续签？</a></div>
+        <div> <a href="policy\移民\出入境阿根廷需填写电子健康申报单.txt" download="出入境阿根廷需填写电子健康申报单.txt">出入境阿根廷需填写电子健康申报单</a></div>
+        <div> <a href="policy\移民\川菜全球大热 港媒：味蕾和舌尖有“跳舞的感觉”.txt" download="川菜全球大热 港媒：味蕾和舌尖有“跳舞的感觉”.txt">川菜全球大热
+                港媒：味蕾和舌尖有“跳舞的感觉”</a></div>
+        <div> <a href="policy\移民\促进多元文化繁荣 两华人获阿根廷“移民巾帼奖”.txt" download="促进多元文化繁荣 两华人获阿根廷“移民巾帼奖”.txt">促进多元文化繁荣
+                两华人获阿根廷“移民巾帼奖”</a></div>
+        <div> <a href="policy\移民\德国法国实施全国性封锁 欧洲再度成为全球疫情“震中”.txt" download="德国法国实施全国性封锁 欧洲再度成为全球疫情“震中”.txt">德国法国实施全国性封锁
+                欧洲再度成为全球疫情“震中”</a></div>
+
+    </div>
+
+    <ul class="pagination" style="position: absolute; left: 700px;top:660px">
+        <li><a href="分页1.html">1</a></li>
+        <li><a href="分页2.html">2</a></li>
+        <li><a href="分页3.html" class="active">3</a></li>
+        <li><a href="分页4.html">4</a></li>
+        <li><a href="index.html">返回主页</a></li>
+
+    </ul>
+</body>
+
+</html>

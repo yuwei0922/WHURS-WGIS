@@ -1,0 +1,25 @@
+.map-background{
+    height:100%;
+    position: relative;
+}
+
+.mapcontent{
+    height: 90%;
+}
+
+.select-contronller{
+    position: absolute;
+    float: right;
+    height: 700px;
+    background-color: black;
+    width: 300px;
+    z-index: 999;
+}
+
+.input-ori{
+
+    margin:auto;
+    padding-top: 10px;
+    height: 100px;
+    width: 200px;
+}

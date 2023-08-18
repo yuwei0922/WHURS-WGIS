@@ -1,0 +1,35 @@
+.map-background{
+    height:100%;
+}
+
+.mapcontent{
+    height: 90%;
+}
+
+.select-contronller{
+    position: absolute;
+    height: 700px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color:rgba(255,255,255,0.6) ;
+    text-align: center;
+    width: 200px;
+}
+
+.input-ori{
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+.input-des{
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+.changedis{
+    position: absolute;
+    bottom: 30px;
+}

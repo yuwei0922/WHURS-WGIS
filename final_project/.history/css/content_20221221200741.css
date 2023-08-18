@@ -1,0 +1,15 @@
+.map-background{
+    height:100%;
+}
+
+.mapcontent{
+    height: 90%;
+}
+
+.select-contronller{
+    display: flex;
+    float: right;
+    height: 40%;
+    background-color: black;
+    width: 30%;
+}

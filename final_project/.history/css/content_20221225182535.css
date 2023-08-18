@@ -1,0 +1,144 @@
+.map-background {
+    height: 100%;
+}
+
+.mapcontent {
+    height: 90%;
+}
+
+.select-contronller {
+    position: absolute;
+    height: 500px;
+    top: 50%;
+    right: 23px;
+    transform: translateY(-50%);
+    background-color: rgba(45, 48, 43, 0.3);
+    text-align: center;
+    width: 250px;
+    opacity: 1;
+    transition: .5s;
+
+}
+
+.input-right {
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    height: 45px;
+}
+
+
+
+.radiosel {
+    margin-top: 30px;
+}
+
+.inouttype {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.changedis {
+    position: absolute;
+    height: 40px;
+    font-size: 25px;
+    width: 100%;
+    bottom: 0;
+    margin: 0 auto;
+    color: black;
+    background-color: rgba(45, 48, 43, 0.4);
+    border-radius: 10px;
+}
+
+#selectcountry {
+    width: 340px;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5%;
+    display: block;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 50px;
+    background: #2f4056;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.check-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+.check-handler::before {
+    font-family: "Font Awesome 6 Free";
+    content: "入";
+    color: #2f4056;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+input[type="checkbox"]:checked+.check-box {
+    background: #5fb878;
+}
+
+input[type="checkbox"]:checked+.check-box .check-handler {
+    margin-left: 50%;
+}
+
+input[type="checkbox"]:checked+.check-box .check-handler::before {
+    font-family: "Font Awesome 6 Free";
+    content: "出";
+    color: #5fb878;
+}
+
+.timecontainer{
+    width: 300px;
+    height: 50px;
+    border:0px solid red;
+}
+.dot{
+    border:1px solid #007Aff;
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    background: white;
+    margin: auto;
+    margin-bottom: -6px;
+}
+.item{
+    flex:1.5;
+    border-bottom:1px solid #cdcdcd;
+}
+.item1{
+    flex:1;
+    border-bottom:0px solid #cdcdcd;
+}
+
+.submitcheck{
+    position: absolute;
+    width:80% ;
+    margin:0 auto;
+    bottom: 20px;
+}

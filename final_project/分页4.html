@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(240, 240, 240);
+    }
+
+    a {
+        font-family:STFangsong;
+        text-decoration: none;
+        color: rgb(10, 55, 151)
+    }
+
+    h2{
+        padding-left: 40px;
+    }
+
+    .right {
+        position: absolute;
+        /*右栏定位过去*/
+        top: 80px;
+        right: 0px;
+        width: 500px;
+        height: 100px;
+        /*opacity:0.5; /*半透明*/
+    }
+
+    .mid {
+        position: absolute;
+        /*定位到右栏左边正好相邻的地方*/
+        top: 80px;
+        right: 480px;
+        width: 500px;
+        height: 100px;
+    }
+
+    .left {
+        position: absolute;
+        /*右栏定位过去*/
+        top: 80px;
+        right: 1107px;
+        height: 100px;
+        /*不设置宽，默认占整行*/
+        /* margin-right: 1000px; */
+        /*设置右边框，使其刚好让出中栏和右栏的位置*/
+    }
+
+    ul.pagination {
+
+        display: inline-block;
+
+        padding: 0;
+
+        margin: 0;
+
+    }
+
+    ul.pagination li {
+        display: inline;
+    }
+
+    ul.pagination li a {
+
+        color: black;
+
+        float: left;
+
+        padding: 8px 16px;
+
+        text-decoration: none;
+
+    }
+
+    ul.pagination li a.active {
+
+        background-color: #4CAF50;
+
+        color: white;
+
+    }
+
+    ul.pagination li a:hover:not(.active) {
+        background-color: #ddd;
+    }
+</style>
+
+<body>
+    <div>
+        <h2><img src="policy\R-C.png"> 移民资讯</h2>
+    </div>
+    <hr>
+
+    <div class="left">
+        <div><a href="policy\移民\美国：国际生仅上网课将不可留在美国境内.txt" download="美国：国际生仅上网课将不可留在美国境内.txt">美国：国际生仅上网课将不可留在美国境内</a></div>
+        <div><a href="policy\移民\美国“公共负担”新规将生效 华策会吁民众勿恐慌.txt" download="美国“公共负担”新规将生效 华策会吁民众勿恐慌.txt">美国“公共负担”新规将生效 华策会吁民众勿恐慌</a></div>
+        <div><a href="policy\移民\美国“一元店”涨价了！华人愿意买单吗？.txt" download="美国“一元店”涨价了！华人愿意买单吗？.txt">美国“一元店”涨价了！华人愿意买单吗？</a></div>
+        <div><a href="policy\移民\美国7月移民排期出炉 多项移民类型无需排期.txt" download="美国7月移民排期出炉 多项移民类型无需排期.txt">美国7月移民排期出炉 多项移民类型无需排期</a></div>
+        <div><a href="policy\移民\美国10月移民排期公布 职业移民绿卡排期传喜讯.txt" download="美国10月移民排期公布 职业移民绿卡排期传喜讯.txt">美国10月移民排期公布 职业移民绿卡排期传喜讯</a></div>
+        <div><a href="policy\移民\美国百人会总裁：对抗歧视挑战 各族裔需牵手合作.txt" download="美国百人会总裁：对抗歧视挑战 各族裔需牵手合作.txt">美国百人会总裁：对抗歧视挑战 各族裔需牵手合作</a></div>
+        <div><a href="policy\移民\美国持续收紧移民政策惹争议.txt" download="美国持续收紧移民政策惹争议.txt">美国持续收紧移民政策惹争议</a></div>
+        <div><a href="policy\移民\美国佛罗里达州下令公立学校秋季学期必须线下复课.txt" download="美国佛罗里达州下令公立学校秋季学期必须线下复课.txt">美国佛罗里达州下令公立学校秋季学期必须线下复课</a></div>
+        <div><a href="policy\移民\美国福建马尾海外联合总会举行庆中秋迎国庆活动.txt" download="美国福建马尾海外联合总会举行庆中秋迎国庆活动.txt">美国福建马尾海外联合总会举行庆中秋迎国庆活动</a></div>
+        <div><a href="policy\移民\美国高校群起反对留学生签证新规.txt" download="美国高校群起反对留学生签证新规.txt">美国高校群起反对留学生签证新规</a></div>
+        <div><a href="policy\移民\美国工作签证新限制24日生效 对H-1B持有者影响较大.txt" download="美国工作签证新限制24日生效 对H-1B持有者影响较大.txt">美国工作签证新限制24日生效 对H-1B持有者影响较大</a></div>
+        <div><a href="policy\移民\美国公布2月移民排期 职业和亲属移民均前进缓慢.txt" download="美国公布2月移民排期 职业和亲属移民均前进缓慢.txt">美国公布2月移民排期 职业和亲属移民均前进缓慢</a></div>
+        <div><a href="policy\移民\美国公布11月移民排期 亲属、职业移民多项推进.txt" download="美国公布11月移民排期 亲属、职业移民多项推进.txt">美国公布11月移民排期 亲属、职业移民多项推进</a></div>
+        <div><a href="policy\移民\美国公布移民排期 EB-2签证排期出现倒退.txt" download="美国公布移民排期 EB-2签证排期出现倒退.txt">美国公布移民排期 EB-2签证排期出现倒退</a></div>
+        <div><a href="policy\移民\美国公布H-1B工作签证新规：按薪资水平分配.txt" download="美国公布H-1B工作签证新规：按薪资水平分配.txt">美国公布H-1B工作签证新规：按薪资水平分配</a></div>
+        <div><a href="policy\移民\美国国家档案馆解密华人移民史料 民众可查询.txt" download="美国国家档案馆解密华人移民史料 民众可查询.txt">美国国家档案馆解密华人移民史料 民众可查询</a></div>
+        <div><a href="policy\移民\美国国务院公布8月移民排期 亲属移民优先.txt" download="美国国务院公布8月移民排期 亲属移民优先.txt">美国国务院公布8月移民排期 亲属移民优先</a></div>
+        <div><a href="policy\移民\美国国务院公布2022年7月移民排期 多数项目排期未变.txt" download="美国国务院公布2022年7月移民排期 多数项目排期未变.txt">美国国务院公布2022年7月移民排期 多数项目排期未变</a></div>
+        <div><a href="policy\移民\美国加州众院通过决议案 纪念废除《排华法案》.txt" download="美国加州众院通过决议案 纪念废除《排华法案》.txt">美国加州众院通过决议案 纪念废除《排华法案》</a></div>
+        <div><a href="policy\移民\美国将暂停发放部分种类非移民工作签证 .txt" download="美国将暂停发放部分种类非移民工作签证 .txt">美国将暂停发放部分种类非移民工作签证 </a></div>
+        <div><a href="policy\移民\美国教育部认证有新规 这两类学生身份或受影响.txt" download="美国教育部认证有新规 这两类学生身份或受影响.txt">美国教育部认证有新规 这两类学生身份或受影响</a></div>
+        <div><a href="policy\移民\美国进行第三轮免费检测试剂发放 每户家庭可领8份.txt" download="美国进行第三轮免费检测试剂发放 每户家庭可领8份.txt">美国进行第三轮免费检测试剂发放 每户家庭可领8份</a></div>
+        <div><a href="policy\移民\美国劳工部推迟H1B工签调涨工资标准新规运行时间.txt" download="美国劳工部推迟H1B工签调涨工资标准新规运行时间.txt">美国劳工部推迟H1B工签调涨工资标准新规运行时间</a></div>
+        <div><a href="policy\移民\美国绿卡“食之无味” 部分华人选择放弃.txt" download="美国绿卡“食之无味” 部分华人选择放弃.txt">美国绿卡“食之无味” 部分华人选择放弃</a></div>
+        <div><a href="policy\移民\美国绿卡出新规 华人咨询还有哪些福利可继续领取.txt" download="美国绿卡出新规 华人咨询还有哪些福利可继续领取.txt">美国绿卡出新规 华人咨询还有哪些福利可继续领取</a></div>
+    </div>
+
+    <div class="mid">
+        <div><a href="policy\移民\美国麻州剑桥通过新立法 无证移民无证驾车不会被捕 .txt" download="美国麻州剑桥通过新立法 无证移民无证驾车不会被捕 .txt">美国麻州剑桥通过新立法 无证移民无证驾车不会被捕 </a></div>
+        <div><a href="policy\移民\美国拟推移民新规 律师：实施细则含糊难把握.txt" download="美国拟推移民新规 律师：实施细则含糊难把握.txt">美国拟推移民新规 律师：实施细则含糊难把握</a></div>
+        <div><a href="policy\移民\美国苏诺玛市拟建“蓬莱亭”纪念加州酒乡华工贡献.txt" download="美国苏诺玛市拟建“蓬莱亭”纪念加州酒乡华工贡献.txt">美国苏诺玛市拟建“蓬莱亭”纪念加州酒乡华工贡献</a></div>
+        <div><a href="policy\移民\美国铁路华工展亮相中国华侨历史博物馆.txt" download="美国铁路华工展亮相中国华侨历史博物馆.txt">美国铁路华工展亮相中国华侨历史博物馆</a></div>
+        <div><a href="policy\移民\美国投资移民签证新政出台 将于11月21日实施.txt" download="美国投资移民签证新政出台 将于11月21日实施.txt">美国投资移民签证新政出台 将于11月21日实施</a></div>
+        <div><a href="policy\移民\美国务院公布11月绿卡排期：亲属移民排期继续停滞.txt" download="美国务院公布11月绿卡排期：亲属移民排期继续停滞.txt">美国务院公布11月绿卡排期：亲属移民排期继续停滞</a></div>
+        <div><a href="policy\移民\美国限制H-1B等工作签证持有者入境至2020年底.txt" download="美国限制H-1B等工作签证持有者入境至2020年底.txt">美国限制H-1B等工作签证持有者入境至2020年底</a></div>
+        <div><a href="policy\移民\美国宣布移民新规：依赖公共福利者将更难获绿卡.txt" download="美国宣布移民新规：依赖公共福利者将更难获绿卡.txt">美国宣布移民新规：依赖公共福利者将更难获绿卡</a></div>
+        <div><a href="policy\移民\美国亚裔民众：反对种族歧视 我们要公平正义.txt" download="美国亚裔民众：反对种族歧视 我们要公平正义.txt">美国亚裔民众：反对种族歧视 我们要公平正义</a></div>
+        <div><a href="policy\移民\美国移民局：持F-1签证学生可网上申请OPT工作许可.txt" download="美国移民局：持F-1签证学生可网上申请OPT工作许可.txt">美国移民局：持F-1签证学生可网上申请OPT工作许可</a></div>
+        <div><a href="policy\移民\美国移民局：新移民体检需接种新冠肺炎疫苗.txt" download="美国移民局：新移民体检需接种新冠肺炎疫苗.txt">美国移民局：新移民体检需接种新冠肺炎疫苗</a></div>
+        <div><a href="policy\移民\美国移民局：已递交延期者绿卡有效期延长至24个月.txt" download="美国移民局：已递交延期者绿卡有效期延长至24个月.txt">美国移民局：已递交延期者绿卡有效期延长至24个月</a></div>
+        <div><a href="policy\移民\美国移民局颁布入籍新政策：题量增多 考试变难.txt" download="美国移民局颁布入籍新政策：题量增多 考试变难.txt">美国移民局颁布入籍新政策：题量增多 考试变难</a></div>
+        <div><a href="policy\移民\美国移民局部分移民服务费用将从10月2日起涨价.txt" download="美国移民局部分移民服务费用将从10月2日起涨价.txt">美国移民局部分移民服务费用将从10月2日起涨价</a></div>
+        <div><a href="policy\移民\美国移民局公布留学生指南 吁部分学生尽量维持签证.txt" download="美国移民局公布留学生指南 吁部分学生尽量维持签证.txt">美国移民局公布留学生指南 吁部分学生尽量维持签证</a></div>
+        <div><a href="policy\移民\美国移民局首次公布：H1B签证持有人数约为58万.txt" download="美国移民局首次公布：H1B签证持有人数约为58万.txt">美国移民局首次公布：H1B签证持有人数约为58万</a></div>
+        <div><a href="policy\移民\美国移民局推新政：申请绿卡可同时申请社安号.txt" download="美国移民局推新政：申请绿卡可同时申请社安号.txt">美国移民局推新政：申请绿卡可同时申请社安号</a></div>
+        <div><a href="policy\移民\美国移民门槛提高政策收紧 律师吁民众及时了解.txt" download="美国移民门槛提高政策收紧 律师吁民众及时了解.txt">美国移民门槛提高政策收紧 律师吁民众及时了解</a></div>
+        <div><a href="policy\移民\美国移民新规10月生效 律师：申请绿卡者宜停领福利.txt" download="美国移民新规10月生效 律师：申请绿卡者宜停领福利.txt">美国移民新规10月生效 律师：申请绿卡者宜停领福利</a></div>
+        <div><a href="policy\移民\美国移民新规出炉 使用公共福利不影响绿卡申请.txt" download="美国移民新规出炉 使用公共福利不影响绿卡申请.txt">美国移民新规出炉 使用公共福利不影响绿卡申请</a></div>
+        <div><a href="policy\移民\美国移民新政将致不良影响？专家：或影响民众健康.txt" download="美国移民新政将致不良影响？专家：或影响民众健康.txt">美国移民新政将致不良影响？专家：或影响民众健康</a></div>
+        <div><a href="policy\移民\美国议员欲废专业实习签证 国际生留美工作难度增.txt" download="美国议员欲废专业实习签证 国际生留美工作难度增.txt">美国议员欲废专业实习签证 国际生留美工作难度增</a></div>
+        <div><a href="policy\移民\美国因示威关闭约70个病毒检测点 法国国庆阅兵取消.txt" download="美国因示威关闭约70个病毒检测点 法国国庆阅兵取消.txt">美国因示威关闭约70个病毒检测点 法国国庆阅兵取消</a></div>
+        <div><a href="policy\移民\美国政府撤销备受争议的国际学生签证政策.txt" download="美国政府撤销备受争议的国际学生签证政策.txt">美国政府撤销备受争议的国际学生签证政策</a></div>
+        <div><a href="policy\移民\美国政府推动重启又出“新招” 这次“中招”的是留学生.txt" download="美国政府推动重启又出“新招” 这次“中招”的是留学生.txt">美国政府推动重启又出“新招” 这次“中招”的是留学生</a></div>
+    </div>
+
+    <div class="right">
+        <div><a href="policy\移民\美国政府宣布留学生及外国记者签证新规修改意见.txt" download="美国政府宣布留学生及外国记者签证新规修改意见.txt">美国政府宣布留学生及外国记者签证新规修改意见</a></div>
+        <div><a href="policy\移民\美国种族歧视，连奥运冠军也难幸免…….txt" download="美国种族歧视，连奥运冠军也难幸免…….txt">美国种族歧视，连奥运冠军也难幸免……</a></div>
+        <div><a href="policy\移民\美国自由女神像与爱丽丝岛计划将于7月20日部分开放 .txt" download="美国自由女神像与爱丽丝岛计划将于7月20日部分开放 .txt">美国自由女神像与爱丽丝岛计划将于7月20日部分开放 </a></div>
+        <div><a href="policy\移民\美国H-1B工作签证申请 将收10美元电子注册费.txt" download="美国H-1B工作签证申请 将收10美元电子注册费.txt">美国H-1B工作签证申请 将收10美元电子注册费</a></div>
+        <div><a href="policy\移民\美国H1B签证出新规 劳工需“专业对口”审核更严格.txt" download="美国H1B签证出新规 劳工需“专业对口”审核更严格.txt">美国H1B签证出新规 劳工需“专业对口”审核更严格</a></div>
+        <div><a href="policy\移民\美加州移民来自墨西哥最多 中国大陆移民数量排第三.txt" download="美加州移民来自墨西哥最多 中国大陆移民数量排第三.txt">美加州移民来自墨西哥最多 中国大陆移民数量排第三</a></div>
+        <div><a href="policy\移民\美食解乡愁：“中国味”如何慰藉海外游子的“中国胃”？.txt" download="美食解乡愁：“中国味”如何慰藉海外游子的“中国胃”？.txt">美食解乡愁：“中国味”如何慰藉海外游子的“中国胃”？</a></div>
+        <div><a href="policy\移民\美限制留学生签证 多个大学表态将帮助国际学生.txt" download="美限制留学生签证 多个大学表态将帮助国际学生.txt">美限制留学生签证 多个大学表态将帮助国际学生</a></div>
+        <div><a href="policy\移民\美伊利诺伊州娱乐大麻合法化 未入籍者应谨慎持有.txt" download="美伊利诺伊州娱乐大麻合法化 未入籍者应谨慎持有.txt">美伊利诺伊州娱乐大麻合法化 未入籍者应谨慎持有</a></div>
+        <div><a href="policy\移民\美移民部：外籍人士申请“良好品行证明”条件更严.txt" download="美移民部：外籍人士申请“良好品行证明”条件更严.txt">美移民部：外籍人士申请“良好品行证明”条件更严</a></div>
+        <div><a href="policy\移民\美移民局：职业移民绿卡积压40万人 中国出生者占2成.txt" download="美移民局：职业移民绿卡积压40万人 中国出生者占2成.txt">美移民局：职业移民绿卡积压40万人 中国出生者占2成</a></div>
+        <div><a href="policy\移民\美移民局计划发布留学生OPT新政 要求工作与所学相关.txt" download="美移民局计划发布留学生OPT新政 要求工作与所学相关.txt">美移民局计划发布留学生OPT新政 要求工作与所学相关</a></div>
+        <div><a href="policy\移民\美移民局扩大信用卡使用接受范围 包括部分绿卡申请.txt" download="美移民局扩大信用卡使用接受范围 包括部分绿卡申请.txt">美移民局扩大信用卡使用接受范围 包括部分绿卡申请</a></div>
+        <div><a href="policy\移民\美政府宣布将允许部分移民配偶持签证合法工作.txt" download="美政府宣布将允许部分移民配偶持签证合法工作.txt">美政府宣布将允许部分移民配偶持签证合法工作</a></div>
+        <div><a href="policy\移民\美政府增加“敏感地点”：禁止在这些地方逮捕移民.txt" download="美政府增加“敏感地点”：禁止在这些地方逮捕移民.txt">美政府增加“敏感地点”：禁止在这些地方逮捕移民</a></div>
+        <div><a href="policy\移民\美H-1B签证批准率连续两年下降 科技公司表不满.txt" download="美H-1B签证批准率连续两年下降 科技公司表不满.txt">美H-1B签证批准率连续两年下降 科技公司表不满</a></div>
+        <div><a href="policy\移民\孟加拉国要求旅客入境前在线填写健康申报表 中使馆发提醒.txt" download="孟加拉国要求旅客入境前在线填写健康申报表 中使馆发提醒.txt">孟加拉国要求旅客入境前在线填写健康申报表 中使馆发提醒</a></div>
+        <div><a href="policy\移民\秘鲁紧急状态期间，旅秘中国公民居留到期怎么办.txt" download="秘鲁紧急状态期间，旅秘中国公民居留到期怎么办.txt">秘鲁紧急状态期间，旅秘中国公民居留到期怎么办</a></div>
+        <div><a href="policy\移民\免费培训、带薪工作 波士顿为移民提供医院上岗机会.txt" download="免费培训、带薪工作 波士顿为移民提供医院上岗机会.txt">免费培训、带薪工作 波士顿为移民提供医院上岗机会</a></div>
+        <div><a href="policy\移民\缅甸对中国游客落地签政策将延期一年.txt" download="缅甸对中国游客落地签政策将延期一年.txt">缅甸对中国游客落地签政策将延期一年</a></div>
+        <div><a href="policy\移民\缅甸仰光社会事务部长：仰光有近10万华人居住.txt" download="缅甸仰光社会事务部长：仰光有近10万华人居住.txt">缅甸仰光社会事务部长：仰光有近10万华人居住</a></div>
+        <div><a href="policy\移民\缅甸移民和人口部：4月起出行不再接受身份证以外证件.txt" download="缅甸移民和人口部：4月起出行不再接受身份证以外证件.txt">缅甸移民和人口部：4月起出行不再接受身份证以外证件</a></div>
+        <div><a href="policy\移民\缅甸移民局：已向仰光省内居民核发70余万张身份证.txt" download="缅甸移民局：已向仰光省内居民核发70余万张身份证.txt">缅甸移民局：已向仰光省内居民核发70余万张身份证</a></div>
+        <div><a href="policy\移民\缅甸中文网：缅甸卫生部公布最新入缅政策.txt" download="缅甸中文网：缅甸卫生部公布最新入缅政策.txt">缅甸中文网：缅甸卫生部公布最新入缅政策</a></div>
+        <div><a href="policy\移民\民航局：6月8日以来已对133个国际客运航班实施熔断.txt" download="民航局：6月8日以来已对133个国际客运航班实施熔断.txt">民航局：6月8日以来已对133个国际客运航班实施熔断</a></div>
+    </div>
+
+    <ul class="pagination" style="position: absolute; left: 700px;top:660px">
+        <li><a href="分页1.html">1</a></li>
+        <li><a href="分页2.html">2</a></li>
+        <li><a href="分页3.html">3</a></li>
+        <li><a href="分页4.html" class="active">4</a></li>
+        <li><a href="index.html">返回主页</a></li>
+
+    </ul>
+
+</body>
+</html>
